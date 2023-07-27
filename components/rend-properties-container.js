@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropertyCard from "./property-card";
 
 const RendPropertiesContainer = () => {
@@ -16,68 +17,24 @@ const RendPropertiesContainer = () => {
         </div>
         <div className="self-stretch flex flex-row flex-wrap py-0 px-2.5 items-center justify-center gap-[32px]">
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc7@2x.png"
-            imageDimensionsText="/car7.svg"
-            imageDimensionsText2="/bathtub5.svg"
-            imageDimensionsText3="/arrowsout2.svg"
-            imageDimensionsText4="/ellipse-1@2x.png"
-            imageDimensionsText5="/sharenetwork7.svg"
-            imageDimensionsText6="/heart4.svg"
-            imageDimensionsText7="/plus4.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc7@2x.png" name="92 Allium Place, Orlando FL" price="395 602"
           />
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc8@2x.png"
-            imageDimensionsText="/car7.svg"
-            imageDimensionsText2="/bathtub5.svg"
-            imageDimensionsText3="/arrowsout2.svg"
-            imageDimensionsText4="/ellipse-1@2x.png"
-            imageDimensionsText5="/sharenetwork8.svg"
-            imageDimensionsText6="/heart4.svg"
-            imageDimensionsText7="/plus4.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc8@2x.png" name="2050 W Dunlap Ave, Phoenix AZ" price="965 302"
           />
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc9@2x.png"
-            imageDimensionsText="/car7.svg"
-            imageDimensionsText2="/bathtub6.svg"
-            imageDimensionsText3="/arrowsout3.svg"
-            imageDimensionsText4="/ellipse-1@2x.png"
-            imageDimensionsText5="/sharenetwork9.svg"
-            imageDimensionsText6="/heart5.svg"
-            imageDimensionsText7="/plus5.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc9@2x.png" name="41182 Dean St., Gonzales LA" price="590 632"
           />
           <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc10@2x.png"
-            imageDimensionsText="/car8.svg"
-            imageDimensionsText2="/bathtub7.svg"
-            imageDimensionsText3="/arrowsout3.svg"
-            imageDimensionsText4="/ellipse-1@2x.png"
-            imageDimensionsText5="/sharenetwork9.svg"
-            imageDimensionsText6="/heart5.svg"
-            imageDimensionsText7="/plus5.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
+            imgUrl="/unsplashrlwe8f8anoc10@2x.png" name="4210 Coquina Harbour Dr, Little River SC" price="236 905"
           />
         </div>
       </div>
-      <button className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded flex flex-row items-start justify-start hover:bg-steelblue sm:max-w-full">
+      <Link href="/properties" className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded flex flex-row items-start justify-start hover:bg-steelblue sm:max-w-full">
         <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center">
           Load more listing
         </div>
-      </button>
+      </Link>
     </div>
   );
 };
