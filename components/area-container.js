@@ -15,15 +15,15 @@ const AreaContainer = () => {
       <div className="self-stretch flex-1 flex flex-row flex-wrap py-0 px-2.5 box-border items-start justify-center max-w-[95%px] text-left text-5xl text-gray-white">
         <div className="self-stretch flex-1 flex flex-col items-center justify-start gap-[24px] max-w-[1300px]">
           <div className="self-stretch flex flex-row items-start justify-center gap-[26px] lg:flex-row md:flex-col">
-            <AreaCard cityName="Centerville" />
+            <AreaCard cityName="Florida" />
             <AreaCard
-              cityName="Centerville"
+              cityName="South Carolina"
               propBackgroundImage={`url("/card-2@3x.png")`}
               propPadding="unset"
               propBoxSizing="unset"
             />
             <AreaCard
-              cityName="Centerville"
+              cityName="Arizona"
               propBackgroundImage={`url("/card-3@3x.png")`}
               propPadding="unset"
               propBoxSizing="unset"
@@ -31,13 +31,13 @@ const AreaContainer = () => {
           </div>
           <div className="self-stretch flex flex-row items-start justify-center gap-[24px] lg:flex-row md:flex-col">
             <AreaCard
-              cityName="Arlington"
+              cityName="Colorado"
               propBackgroundImage={`url("/card-4@3x.png")`}
               propPadding="10px"
               propBoxSizing="border-box"
             />
             <AreaCard
-              cityName="Centerville"
+              cityName="California"
               propBackgroundImage={`url("/card-5@3x.png")`}
               propPadding="10px"
               propBoxSizing="border-box"
