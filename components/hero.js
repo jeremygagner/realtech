@@ -3,6 +3,67 @@ import { Menu, Dropdown } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { useRouter } from "next/router";
 
+const cities = [
+  {
+    key: "1",
+    label: <a onClick={(e) => e.preventDefault}>Montreal</a>,
+  },
+  {
+    key: "2",
+    label: <a onClick={(e) => e.preventDefault}>Quebec</a>,
+  },
+  {
+    key: "3",
+    label: <a onClick={(e) => e.preventDefault}>Chicago</a>,
+  },
+  {
+    key: "4",
+    label: <a onClick={(e) => e.preventDefault}>Houston</a>,
+  },
+];
+
+const types = [
+  {
+    key: "1",
+    label: <a onClick={(e) => e.preventDefault}>Studio apartments</a>,
+  },
+  {
+    key: "2",
+    label: <a onClick={(e) => e.preventDefault}>One-bedroom apartments</a>,
+  },
+  {
+    key: "3",
+    label: <a onClick={(e) => e.preventDefault}>Two-bedroom apartments</a>,
+  },
+  {
+    key: "4",
+    label: <a onClick={(e) => e.preventDefault}>Three-bedroom apartments</a>,
+  },
+  {
+    key: "5",
+    label: (
+      <a onClick={(e) => e.preventDefault}>
+        Four or more bedroom apartments/houses
+      </a>
+    ),
+  },
+];
+
+const rents = [
+  {
+    key: "1",
+    label: <a onClick={(e) => e.preventDefault}>$500-$2000</a>,
+  },
+  {
+    key: "2",
+    label: <a onClick={(e) => e.preventDefault}>$2500-$10000</a>,
+  },
+  {
+    key: "3",
+    label: <a onClick={(e) => e.preventDefault}>$10000+</a>,
+  },
+];
+
 const Hero = () => {
   const router = useRouter();
 
@@ -15,12 +76,11 @@ const Hero = () => {
       <div className="self-stretch flex flex-col items-center justify-center gap-[62px] max-w-[95%px]">
         <div className="self-stretch flex flex-col items-center justify-start gap-[24px] md:max-w-full">
           <div className="self-stretch relative leading-[72px] font-semibold">
-            Find Your Dream Home
+            Find Your Dream Home.
           </div>
           <div className="self-stretch relative text-xl leading-[28px] font-body-regular-600 text-primary-50">
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae; Proin sodales ultrices nulla blandit
-            volutpat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            ut purus quis nunc pulvinar mollis iaculis vel erat.
           </div>
         </div>
         <div className="self-stretch flex flex-col items-center justify-start gap-[17px] text-left text-base text-primary-700 font-body-regular-600">
@@ -43,22 +103,7 @@ const Hero = () => {
                   Locations
                 </div>
                 <Dropdown
-                  overlay={
-                    <Menu>
-                      {[
-                        { value: "New York" },
-                        { value: "Los Angeles" },
-                        { value: "Chicago" },
-                        { value: "Berlin" },
-                      ].map((option, index) => (
-                        <Menu.Item key={index}>
-                          <a onClick={(e) => e.preventDefault()}>
-                            {option.value || ""}
-                          </a>
-                        </Menu.Item>
-                      ))}
-                    </Menu>
-                  }
+                  menu={{ items: cities }}
                   placement="bottomLeft"
                   trigger={["hover"]}
                 >
@@ -74,23 +119,7 @@ const Hero = () => {
                 </div>
                 <Dropdown
                   className="self-stretch"
-                  overlay={
-                    <Menu>
-                      {[
-                        { value: "Studio apartments" },
-                        { value: "One-bedroom apartments" },
-                        { value: "Two-bedroom apartments" },
-                        { value: "Three-bedroom apartments" },
-                        { value: "Four or more bedroom apartments/houses" },
-                      ].map((option, index) => (
-                        <Menu.Item key={index}>
-                          <a onClick={(e) => e.preventDefault()}>
-                            {option.value || ""}
-                          </a>
-                        </Menu.Item>
-                      ))}
-                    </Menu>
-                  }
+                  menu={{ items: types }}
                   placement="bottomLeft"
                   trigger={["hover"]}
                 >
@@ -106,21 +135,7 @@ const Hero = () => {
                 </div>
                 <Dropdown
                   className="self-stretch"
-                  overlay={
-                    <Menu>
-                      {[
-                        { value: "$500-$2000" },
-                        { value: "$2500-$10000" },
-                        { value: "$10000+" },
-                      ].map((option, index) => (
-                        <Menu.Item key={index}>
-                          <a onClick={(e) => e.preventDefault()}>
-                            {option.value || ""}
-                          </a>
-                        </Menu.Item>
-                      ))}
-                    </Menu>
-                  }
+                  menu={{ items: rents }}
                   placement="bottomLeft"
                   trigger={["hover"]}
                 >

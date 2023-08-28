@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
+        <link rel="icon" type="image/x-icon" href="/houseline.svg"></link>
       </Head>
       <Component {...pageProps} />
     </React.Fragment>

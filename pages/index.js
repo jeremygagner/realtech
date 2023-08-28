@@ -14,7 +14,6 @@ const LandingPage = () => {
       <Head>
         <title>Realtech</title>
         <meta name="description" content="Find your perfect home." />
-        <link rel="icon" type="image/x-icon" href="/jginformatique-logo-officiel-icone.svg"></link>
       </Head>
       <div className="relative bg-gray-white w-full flex flex-col items-center justify-start">
         <Header hamburger={false} />
